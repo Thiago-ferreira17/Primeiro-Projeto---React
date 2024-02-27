@@ -7,10 +7,13 @@ import Users from "./Containers/Users";
 function Routes() {
   return (
     <Router>
-      <Route path="/" Component={Home} />
-      <Route path="/usuarios" Component={Users} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/usuarios" component={Users} />
+      </Switch>
     </Router>
   );
 }
 
 export default Routes;
+

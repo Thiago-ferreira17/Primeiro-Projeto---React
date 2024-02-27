@@ -1,16 +1,19 @@
 import React, { useState, useRef } from "react";
 
+import { useHistory } from "react-router-dom";
+
 import axios from "axios";
 
 import People from "../../Assets/people.svg";
 
 import Arrow from "../../Assets/arrow.svg";
 
+import H1 from "../../Components/Title/styles";
+
 import {
   Container,
   Image,
   ContainerItens,
-  H1,
   InputLabel,
   Input,
   Button,
@@ -20,6 +23,7 @@ const App = () => {
   // const users = [];
 
   const [users, setUsers] = useState([]);
+  const history = useHistory();
 
   const inputName = useRef();
   const inputAge = useRef();
@@ -31,6 +35,8 @@ const App = () => {
     });
     console.log(newUser);
     setUsers([...users, newUser]);
+
+    history.push("/usuarios");
   }
 
   return (
