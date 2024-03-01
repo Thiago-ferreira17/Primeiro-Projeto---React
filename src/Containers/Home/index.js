@@ -8,16 +8,11 @@ import People from "../../Assets/people.svg";
 
 import Arrow from "../../Assets/arrow.svg";
 
-import H1 from "../../Components/Title/styles";
+import H1 from "../../Components/Titles";
 
-import {
-  Container,
-  Image,
-  ContainerItens,
-  InputLabel,
-  Input,
-  Button,
-} from "./style";
+import ContainerItens from "../../Components/ContainerItens";
+
+import { Container, Image, InputLabel, Input, Button } from "./style";
 
 const App = () => {
   // const users = [];

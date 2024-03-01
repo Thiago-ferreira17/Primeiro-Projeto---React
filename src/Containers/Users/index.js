@@ -10,7 +10,11 @@ import Arrow from "../../Assets/arrow.svg";
 
 import Trash from "../../Assets/trash.svg";
 
-import { Container, Image, ContainerItens, H1, Button, User } from "./style";
+import H1 from "../../Components/Titles";
+
+import ContainerItens from "../../Components/ContainerItens";
+
+import { Container, Image,  Button, User } from "./style";
 
 const Users = () => {
   // const users = [];
@@ -44,7 +48,7 @@ const Users = () => {
     <Container>
       <Image alt="logo-imagem" src={Avatar} />
 
-      <ContainerItens>
+      <ContainerItens isBlur={true}>
         <H1>Usuários</H1>
 
         <ul>
